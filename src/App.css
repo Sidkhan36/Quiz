@@ -1,38 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@200;700&display=swap");
+:root {
+  --text: #293264;
+  --btn-primary: #4d5b9e;
+  --bg: #f5f7fb;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.start-page {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bg);
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text);
 }
 
-.App-link {
-  color: #61dafb;
+.start-page > .upBlobs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 500px;
+  width: 500px;
+}
+.start-page > .downBlobs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 400px;
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start-page h1 {
+  color: var(--text);
+  font-size: 5rem;
+  margin: 0;
+  font-family: "Karla", sans-serif;
 }
+.start-page p {
+  color: var(--text);
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.btn {
+  text-align: center;
+  border-radius: 15px;
+  border-color: var(--btn-primary);
+  background-color: var(--btn-primary);
+  font-size: 18px;
+  color: var(--bg);
+  padding: 20px 60px;
+  border: none;
+  font-weight: 500;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.middle-page {
+  background-color: var(--bg);
+  color: var(--text);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sec2-upBlobs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 300px;
+}
+
+.sec2-downBlobs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.qpaper{
+  padding: 20px 200px;
+  /* background-color: red; */
+}
+
+.q-and-option{
+  display: flex;  
+  flex-direction: column;
+
+}
+
+.middle-page > .qpaper > .q-and-option > .queston-cls {
+  padding: 40px 0 ;
+  margin: 0;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text);
+  text-align: left;
+}
+
+.div-options{
+  display: flex;
+}
+
+.options{
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: var(--bg);
+  border: 1px solid var(--text);
+  border-radius: 7.94239px;
+}
+
+
+
